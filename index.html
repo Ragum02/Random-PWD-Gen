@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Random PassWord Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Juste un test</h1>
-    <button class="test">Test</button>
+    <h1>Random PassWord Generator</h1>
+
+    <div id="main">
+    <input type="number" min="6" max="30" id="userInput" value="6" onkeyup="if(value<6) value=6;if(value>30) value=30;"required>
+        <div>
+        <input type="checkbox" id="noNum" name="noNumbers">
+        <label for="noNumbers">No Numbers</label>
+        <input type="checkbox" id="noSpec" name="noSpecial">
+        <label for="noSpecial">No special characters</label>
+    </div>
+    <button class="test">RANDOMIZE</button>
+
+</div>
+    <div class="container"></div>
 </body>
 </html>

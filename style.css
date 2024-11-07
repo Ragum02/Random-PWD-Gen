@@ -1,20 +1,45 @@
 *{
-    margin:0;
-    padding:0;
-    border:1px solid red;
+    margin: 0;
+    padding: 0;
 }
 h1{
     font-size: 5rem;
     text-align: center;
 }
+#main {
+    height: 250px;
+    width : 300px;
+    margin : auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#userInput{
+    width: 150px;
+    text-align: center;
+    font-weight: 800;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 100px;
+}
 .test{
-    width: 250px;
-    height: 150px;
-    transform: rotate(25deg);
-    margin: 0 500px;
-    padding: 123px;
+    background-color: violet;
+    border-radius: 25px;
+    margin: 0 50px;
+    padding: 25px;
+    font-size: 25px;
     transition: ease 0.5s;
 }
 .test:hover{
-    transform:scale(1.1) rotate(75deg);
+    transform:scale(1.2) rotate(180deg);
+}
+.result{
+    font-size: 50px;
+    max-width: 850px;
+    background-color: violet;
+    margin: 150px auto; 
+    border-radius: 25px;
+    border: 1px solid black;
+    text-align: center;
 }
